@@ -1,0 +1,33 @@
+/* :root {
+  --cinza-1: #161616;
+  --cinza-2: #191919;
+  --cinza-3: #252525;
+
+  --vermelho-1: #a32522;
+  --vermelho-2: #b93e3b;
+
+  --branco-1: #f2f2f2;
+} */
+
+@import "tailwindcss";
+
+@theme {
+  --color-cinza-100: #161616;
+  --color-cinza-200: #191919;
+  --color-cinza-300: #252525;
+
+  --color-vermelho-100: #a32522;
+  --color-vermelho-200: #b93e3b;
+
+  --font-poppins: "Poppins", "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+  --font-roboto: "Roboto", "Helvetica Neue", "Segoe UI", "Arial", sans-serif;
+}
+
+@utility container {
+  margin: 0 auto;
+  padding: 0 0.5rem;
+  max-width: 1400px;
+  @media (width >= 40rem) {
+    padding: 0 1rem;
+  }
+}
