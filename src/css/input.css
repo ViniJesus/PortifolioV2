@@ -1,14 +1,3 @@
-/* :root {
-  --cinza-1: #161616;
-  --cinza-2: #191919;
-  --cinza-3: #252525;
-
-  --vermelho-1: #a32522;
-  --vermelho-2: #b93e3b;
-
-  --branco-1: #f2f2f2;
-} */
-
 @import "tailwindcss";
 
 @theme {
@@ -18,9 +7,25 @@
 
   --color-vermelho-100: #a32522;
   --color-vermelho-200: #b93e3b;
+  --color-vermelho-950: #320100;
+
+  --color-branco: #f2f2f2;
 
   --font-poppins: "Poppins", "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
   --font-roboto: "Roboto", "Helvetica Neue", "Segoe UI", "Arial", sans-serif;
+
+  --animate-slide-in: slideIn 0.4s ease-in-out forwards;
+
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 }
 
 @utility container {
@@ -30,4 +35,20 @@
   @media (width >= 40rem) {
     padding: 0 1rem;
   }
+}
+
+@utility animate-1 {
+  animation-delay: 100ms;
+}
+@utility animate-2 {
+  animation-delay: 200ms;
+}
+@utility animate-3 {
+  animation-delay: 300ms;
+}
+@utility animate-4 {
+  animation-delay: 400ms;
+}
+@utility animate-5 {
+  animation-delay: 500ms;
 }
