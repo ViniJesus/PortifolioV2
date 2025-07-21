@@ -10,11 +10,15 @@
   --color-vermelho-950: #320100;
 
   --color-branco: #f2f2f2;
+  --color-cinza-claro-100: #d9d9d9;
 
   --font-poppins: "Poppins", "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
   --font-roboto: "Roboto", "Helvetica Neue", "Segoe UI", "Arial", sans-serif;
 
   --animate-slide-in: slideIn 0.4s ease-in-out forwards;
+
+  --breakpoint-xs: 28rem;
+  --breakpoint-1sm: 50rem;
 
   @keyframes slideIn {
     0% {
@@ -51,4 +55,10 @@
 }
 @utility animate-5 {
   animation-delay: 500ms;
+}
+
+@layer components {
+  .input {
+    @apply mt-1 rounded-md py-2 outline-2 outline-cinza-claro-100;
+  }
 }
