@@ -17,57 +17,28 @@
       <a href="./">
         <img src="/src/img/header/LOGO.svg" alt="Logo do Portifolio" />
       </a>
-      <nav
-        class="z-40 hidden items-center max-md:fixed max-md:inset-0 max-md:w-full md:block"
-        id="mobile-menu"
-      >
-        <div
-          class="fixed inset-0 bg-cinza-300/40 backdrop-blur-md md:hidden"
-        ></div>
-        <ul
-          class="text-2xl text-branco max-md:absolute max-md:z-50 max-md:w-full max-md:divide-y-2 max-md:divide-white/10 max-md:p-8 md:flex md:flex-wrap md:gap-8 md:text-lg lg:text-xl"
-        >
+      <nav class="z-40 hidden items-center max-md:fixed max-md:inset-0 max-md:w-full md:block" id="mobile-menu">
+        <div class="fixed inset-0 bg-cinza-300/40 backdrop-blur-md md:hidden"></div>
+        <ul class="text-2xl text-branco max-md:absolute max-md:z-50 max-md:w-full max-md:divide-y-2 max-md:divide-white/10 max-md:p-8 md:flex md:flex-wrap md:gap-8 md:text-lg">
           <li class="animate-slide-in opacity-0 animate-1">
-            <a
-              href="#home"
-              class="block p-4 max-md:hover:bg-white/10 md:px-0 md:py-2 md:hover:underline md:hover:underline-offset-8"
-              >Home</a
-            >
+            <a href="#home" class="link block p-4 max-md:hover:bg-white/10 md:px-0 md:py-2">Home</a>
           </li>
           <li class="animate-slide-in opacity-0 animate-2">
-            <a
-              href="#about-me"
-              class="block p-4 max-md:hover:bg-white/10 md:px-0 md:py-2 md:hover:underline md:hover:underline-offset-8"
-              >Sobre mim</a
-            >
+            <a href="#about-me" class="link block p-4 max-md:hover:bg-white/10 md:px-0 md:py-2">Sobre mim</a>
           </li>
           <li class="animate-slide-in opacity-0 animate-3">
-            <a
-              href="#projects"
-              class="block p-4 max-md:hover:bg-white/10 md:px-0 md:py-2 md:hover:underline md:hover:underline-offset-8"
-              >Projetos</a
-            >
+            <a href="#projects" class="link block p-4 max-md:hover:bg-white/10 md:px-0 md:py-2">Projetos</a>
           </li>
           <li class="animate-slide-in opacity-0 animate-4">
-            <a
-              href="#certificates"
-              class="block p-4 max-md:hover:bg-white/10 md:px-0 md:py-2 md:hover:underline md:hover:underline-offset-8"
-              >Certificados</a
-            >
+            <a href="#certificates" class="link block p-4 max-md:hover:bg-white/10 md:px-0 md:py-2">Certificados</a>
           </li>
           <li class="animate-slide-in opacity-0 animate-5">
-            <a
-              href="#contact"
-              class="block p-4 max-md:hover:bg-white/10 md:px-0 md:py-2 md:hover:underline md:hover:underline-offset-8"
-              >Contato</a
-            >
+            <a href="#contact" class="link block p-4 max-md:hover:bg-white/10 md:px-0 md:py-2">Contato</a>
           </li>
         </ul>
       </nav>
       <button class="md:hidden" id="mobile-button">
-        <span
-          class="flex h-3 w-5 flex-col justify-between *:h-0.5 *:rounded-md *:bg-vermelho-100"
-        >
+        <span class="flex h-3 w-5 flex-col justify-between *:h-0.5 *:rounded-md *:bg-vermelho-100">
           <span></span>
           <span></span>
           <span></span>
@@ -76,46 +47,25 @@
     </header>
 
     <!-- HOME  -->
-    <main
-      id="home"
-      class="container mt-16 text-branco md:flex md:items-center md:justify-between"
-    >
+    <main id="home" class="container mt-16 text-branco md:flex md:items-center md:justify-between">
       <div>
-        <h1
-          class="max-w-sm font-poppins text-xl font-bold md:max-w-full md:text-5xl"
-        >
+        <h1 class="max-w-sm font-poppins text-xl font-bold md:max-w-full md:text-5xl">
           Olá, eu sou <span class="text-vermelho-100">Vinícius Jesus</span>
+          <span class="hidden h-1 w-6 animate-blink bg-vermelho-100 1lg:inline-block"></span>
         </h1>
         <p class="font-roboto">Desenvolvedor Web Front-End</p>
-        <button class="mt-3.5 rounded-md bg-vermelho-100 px-4 py-2 font-bold">
-          Baixar CV
-        </button>
+        <button id="download-cv" class="button mt-3.5">Baixar CV</button>
       </div>
-      <img
-        src="/src/img/main/PIXEL 1.png"
-        alt="Pixel Art de uma garoto programando"
-        class="hidden md:block md:h-1/3 md:w-1/3"
-      />
+      <img src="/src/img/main/PIXEL 1.png" alt="Pixel Art de uma garoto programando" class="hidden md:block md:h-1/3 md:w-1/3" />
     </main>
 
     <!-- SOBRE MIM  -->
     <div class="bg-cinza-200">
-      <section
-        id="about-me"
-        class="container mt-10 bg-cinza-200 py-8 text-branco"
-      >
+      <section id="about-me" class="container mt-10 bg-cinza-200 py-8 text-branco">
         <div class="sm:flex sm:gap-10">
-          <div
-            class="relative mx-auto h-72 w-72 flex-shrink-0 rounded-xl pt-8 lg:h-96 lg:w-96"
-          >
-            <img
-              src="/src/img/about/perfil.jpg"
-              alt="Minha foto de perfil"
-              class="block h-72 w-72 rounded-xl lg:h-96 lg:w-96"
-            />
-            <div
-              class="absolute right-0 bottom-0 flex h-20 w-20 translate-x-1/3 translate-y-2/3 flex-col items-center justify-center rounded-xl bg-vermelho-200 p-2 text-center"
-            >
+          <div class="relative mx-auto h-72 w-72 flex-shrink-0 rounded-xl pt-8 lg:h-96 lg:w-96">
+            <img src="/src/img/about/perfil.jpg" alt="Minha foto de perfil" class="block h-72 w-72 rounded-xl lg:h-96 lg:w-96" />
+            <div class="absolute right-0 bottom-0 flex h-20 w-20 translate-x-1/3 translate-y-4/5 animate-jump flex-col items-center justify-center rounded-xl bg-vermelho-200 p-2 text-center">
               <h2 class="font-bold">6+</h2>
               <p class="text-xs">Meses de Experiência</p>
             </div>
@@ -123,52 +73,31 @@
 
           <div>
             <div class="flex flex-col pt-8 max-sm:mt-8">
-              <h1 class="font-poppins text-xl font-bold uppercase md:text-2xl">
-                Sobre mim
-              </h1>
+              <h1 class="font-poppins text-xl font-bold uppercase md:text-2xl">Sobre mim</h1>
               <span class="h-1 w-14 rounded-md bg-vermelho-100"></span>
             </div>
 
             <p class="my-5 font-roboto text-xs text-balance xs:text-base">
-              Sou um desenvolvedor dedicado, que está sempre em busca de novos
-              desafios e oportunidades para crescer profissionalmente.
-              Atualmente formado em Analise e Desenvolvimento de Sistemas e
-              atualmente expandindo meus conhecimentos para Pós-Graduação em
-              Desenvolvimento Full Stack.
+              Sou um desenvolvedor dedicado, que está sempre em busca de novos desafios e oportunidades para crescer profissionalmente. Atualmente formado em Analise e Desenvolvimento de Sistemas e
+              atualmente expandindo meus conhecimentos para Pós-Graduação em Desenvolvimento Full Stack.
             </p>
             <div class="flex flex-col gap-10 1sm:flex-row">
-              <div
-                class="rounded-lg border-l-4 border-vermelho-100 bg-cinza-300 p-5 sm:min-w-56"
-              >
+              <div class="rounded-lg border-l-4 border-vermelho-100 bg-cinza-300 p-5 sm:min-w-56">
                 <div class="flex items-center gap-2">
-                  <img
-                    class="rounded-full bg-vermelho-200 p-2"
-                    src="src/img/about/graduate.svg"
-                    alt=""
-                  />
+                  <img class="rounded-full bg-vermelho-200 p-2" src="src/img/about/graduate.svg" alt="" />
                   <h1 class="font-bold">Formação</h1>
                 </div>
-                <p class="my-5 max-w-sm">
-                  Tecnólogo em Análise e Desenvolvimento de Sistemas
-                </p>
+                <p class="my-5 max-w-sm">Tecnólogo em Análise e Desenvolvimento de Sistemas</p>
                 <div class="flex-grow"></div>
                 <p class="text-right font-bold">USCS</p>
               </div>
 
-              <div
-                class="rounded-lg border-l-4 border-vermelho-100 bg-cinza-300 p-5 sm:min-w-56"
-              >
+              <div class="rounded-lg border-l-4 border-vermelho-100 bg-cinza-300 p-5 sm:min-w-56">
                 <div class="flex items-center gap-2">
-                  <img
-                    class="rounded-full bg-vermelho-200 p-2"
-                    src="src/img/about/book.svg"
-                    alt=""
-                  />
+                  <img class="rounded-full bg-vermelho-200 p-2" src="src/img/about/book.svg" alt="" />
                   <h1 class="font-bold">Educação Atual</h1>
                 </div>
-                <p class="my-5 max-w-sm">
-                  Pós Graduação em Full Stack Development
-                </p>
+                <p class="my-5 max-w-sm">Pós Graduação em Full Stack Development</p>
                 <div class="flex-grow"></div>
                 <p class="text-right font-bold">FIAP</p>
               </div>
@@ -181,7 +110,7 @@
           <span class="h-1 w-14 rounded-md bg-vermelho-100"></span>
         </div>
         <ul
-          class="mt-5 flex flex-wrap gap-2.5 pb-10 *:rounded-md *:bg-vermelho-200 *:px-4 *:py-2 *:font-roboto *:text-sm *:font-medium"
+          class="mt-5 flex flex-wrap gap-2.5 pb-10 *:rounded-md *:bg-vermelho-200 *:px-4 *:py-2 *:font-roboto *:text-sm *:font-medium *:duration-300 *:ease-in-out *:hover:-translate-y-1 *:hover:transition-all"
         >
           <li>HTML</li>
           <li>CSS</li>
@@ -205,24 +134,13 @@
     <!-- PROJETOS -->
     <section class="container text-branco" id="projects">
       <div class="flex flex-col items-center pt-8">
-        <h1 class="font-poppins text-xl font-bold uppercase md:text-2xl">
-          Projetos
-        </h1>
+        <h1 class="font-poppins text-xl font-bold uppercase md:text-2xl">Projetos</h1>
         <span class="h-1 w-14 rounded-md bg-vermelho-100"></span>
       </div>
-      <div
-        class="mt-8 flex flex-col items-center gap-5 p-4 *:max-w-sm *:rounded-md *:max-xs:max-w-xs md:flex-row md:justify-center"
-      >
-        <img src="src/img/projects/lifesurf.png" alt="" />
-        <img src="src/img/projects/lifesurf.png" alt="" />
-        <img src="src/img/projects/lifesurf.png" alt="" />
-      </div>
+      <div id="project-grid" class="mx-auto mt-10 grid max-w-4xl grid-cols-[max-content] place-items-center justify-center gap-4 md:grid-cols-[max-content_max-content] md:gap-6"></div>
+
       <div class="flex justify-center">
-        <button
-          class="mt-5 rounded-md bg-vermelho-100 px-4 py-2 font-roboto font-bold uppercase"
-        >
-          VER MAIS
-        </button>
+        <button id="load-more" class="button mt-5">VER MAIS</button>
       </div>
     </section>
 
@@ -230,17 +148,21 @@
     <div class="bg-cinza-200">
       <section class="container mt-8 pb-8 text-branco" id="certificates">
         <div class="flex flex-col items-center pt-8">
-          <h1 class="font-poppins text-xl font-bold uppercase md:text-2xl">
-            Certificados
-          </h1>
+          <h1 class="font-poppins text-xl font-bold uppercase md:text-2xl">Certificados</h1>
           <span class="h-1 w-14 rounded-md bg-vermelho-100"></span>
         </div>
-        <div
-          class="mt-10 flex justify-center gap-5 overflow-x-auto p-4 *:max-w-sm *:rounded-md *:max-xs:max-w-xs"
-        >
-          <img src="src/img/projects/lifesurf.png" alt="" />
-          <img src="src/img/projects/lifesurf.png" alt="" />
-          <img src="src/img/projects/lifesurf.png" alt="" />
+        <div class="slide-wrapper mt-10 overflow-hidden">
+          <ul class="slide m-0 flex gap-5 p-0 *:w-4/5 *:max-w-[800px] *:shrink-0">
+            <li>
+              <img class="block max-w-full" src="src/img/projects/lifesurf.png" alt="" />
+            </li>
+            <li>
+              <img class="block max-w-full" src="src/img/projects/lifesurf.png" alt="" />
+            </li>
+            <li>
+              <img class="block max-w-full" src="src/img/projects/lifesurf.png" alt="" />
+            </li>
+          </ul>
         </div>
       </section>
     </div>
@@ -248,47 +170,31 @@
     <!-- CONTATO -->
     <section class="container mt-8 pb-8 text-branco" id="contact">
       <div class="flex flex-col items-center pt-8">
-        <h1 class="font-poppins text-xl font-bold uppercase md:text-2xl">
-          Contato
-        </h1>
+        <h1 class="font-poppins text-xl font-bold uppercase md:text-2xl">Contato</h1>
         <span class="h-1 w-14 rounded-md bg-vermelho-100"></span>
       </div>
       <div class="md:flex md:items-start md:gap-5">
-        <div
-          class="mx-4 mt-8 flex flex-col gap-5 border-y-4 border-vermelho-100 bg-cinza-300 px-5 py-5 md:min-w-sm"
-        >
+        <div class="mx-4 mt-8 flex flex-col gap-5 border-y-4 border-vermelho-100 bg-cinza-300 px-5 py-5 md:min-w-sm">
           <div class="flex items-center gap-2">
-            <img
-              src="src/img/contact/phone-celular2.svg"
-              alt="Icone de um telefone"
-            />
+            <img src="src/img/contact/phone-celular2.svg" alt="Icone de um telefone" />
             <div>
               <h1 class="font-poppins font-bold">Telefone</h1>
               <p class="font-roboto">(11) 98944-1193</p>
             </div>
           </div>
           <div class="flex items-center gap-2">
-            <img
-              src="src/img/contact/mail-celular2.svg"
-              alt="Icone de uma carta"
-            />
+            <img src="src/img/contact/mail-celular2.svg" alt="Icone de uma carta" />
             <div>
               <h1 class="font-poppins font-bold">Email</h1>
               <p class="font-roboto">vini.jesus1342@gmail.com</p>
             </div>
           </div>
           <div class="flex items-center gap-5">
-            <a href="https://github.com/ViniJesus"
-              ><img src="src/img/contact/github.svg" alt=""
-            /></a>
-            <a href="https://www.linkedin.com/in/vinicius-s-jesus/"
-              ><img src="src/img/contact/linkedin.svg" alt=""
-            /></a>
+            <a href="https://www.linkedin.com/in/vinicius-s-jesus/"><img src="src/img/contact/linkedin.svg" alt="" /></a>
+            <a href="https://github.com/ViniJesus"><img src="src/img/contact/github.svg" alt="" /></a>
           </div>
         </div>
-        <form
-          class="mx-4 mt-8 flex flex-col gap-5 border-y-4 border-vermelho-100 bg-cinza-300 px-5 py-5 md:w-full"
-        >
+        <form id="contato-form" class="mx-4 mt-8 flex flex-col gap-5 border-y-4 border-vermelho-100 bg-cinza-300 px-5 py-5 md:w-full">
           <div class="gap-5 max-md:space-y-5 md:flex md:items-center">
             <div class="flex w-full flex-col">
               <label for="name">Seu Nome</label>
@@ -303,32 +209,22 @@
             <label for="msg">Seu Nome</label>
             <textarea class="input" name="msg" id="msg" rows="10"></textarea>
           </div>
-          <button
-            class="mx-auto w-1/2 rounded-md bg-vermelho-100 px-4 py-2 uppercase"
-          >
-            Enviar
-          </button>
+
+          <button class="button mx-auto w-1/2" type="submit">Enviar</button>
+          <p id="form-status" class="mt-5 hidden rounded-md px-4 py-4 text-center text-sm"></p>
         </form>
       </div>
     </section>
 
     <!-- RODAPE -->
     <div class="bg-cinza-200">
-      <footer
-        class="container mt-8 bg-cinza-200 text-branco md:flex md:justify-between"
-      >
+      <footer class="container mt-8 bg-cinza-200 pb-8 text-branco md:flex md:justify-between">
         <div class="mx-4 flex flex-col pt-8">
-          <h1 class="font-poppins text-xl font-bold uppercase">
-            OBRIGADO PELA VISITA
-          </h1>
+          <h1 class="font-poppins text-xl font-bold uppercase">OBRIGADO PELA VISITA</h1>
           <span class="h-1 w-1/2 rounded-md bg-vermelho-100"></span>
-          <p
-            class="mt-4 text-center font-roboto text-xs md:inline-block md:text-base"
-          >
-            © 2025 Vinícius jesus. Alguns direitos reservados.
-          </p>
+          <p class="mt-4 hidden text-left font-roboto text-xs md:inline-block md:text-base">© 2025 Vinícius jesus. Alguns direitos reservados.</p>
         </div>
-        <div class="flex justify-between">
+        <div class="flex justify-between md:gap-96">
           <div class="mt-5">
             <h2 class="mx-4 font-bold">Links Úteis</h2>
             <ul class="mx-3 mt-3 space-y-1.5">
@@ -346,9 +242,7 @@
               </li>
               <li class="flex gap-2">
                 <img src="src/img/footer/arrow.svg" alt="" />
-                <a href="#certificates"
-                  ><p class="font-roboto">Certificados</p></a
-                >
+                <a href="#certificates"><p class="font-roboto">Certificados</p></a>
               </li>
               <li class="flex gap-2">
                 <img src="src/img/footer/arrow.svg" alt="" />
@@ -357,32 +251,19 @@
             </ul>
           </div>
           <div class="mt-5 mr-4">
-            <h2 class="font-bold">Redes Sociais</h2>
+            <h2 class="text-center font-bold">Redes Sociais</h2>
             <div class="mx-auto mt-3 flex justify-center gap-2.5">
-              <a href="https://www.linkedin.com/in/vinicius-s-jesus/"
-                ><img src="src/img/footer/linkedin.svg" alt="Icone do linkedin"
-              /></a>
-              <a href="https://github.com/ViniJesus"
-                ><img src="src/img/footer/github.svg" alt="Icone do github"
-              /></a>
-              <a href="#"
-                ><img
-                  src="src/img/footer/instagram.svg"
-                  alt="Icone do instagram"
-              /></a>
+              <a href="https://www.linkedin.com/in/vinicius-s-jesus/"><img class="w-8" src="src/img/footer/linkedin.svg" alt="Icone do linkedin" /></a>
+              <a href="https://github.com/ViniJesus"><img class="w-8" src="src/img/footer/github.svg" alt="Icone do github" /></a>
+              <a href="#"><img class="w-8" src="src/img/footer/instagram.svg" alt="Icone do instagram" /></a>
             </div>
-            <img
-              class="mx-auto mt-7"
-              src="src/img/header/LOGO.svg"
-              alt="Logo da Portifolio"
-            />
+            <img class="mx-auto mt-7" src="src/img/header/LOGO.svg" alt="Logo da Portifolio" />
           </div>
         </div>
-        <p class="mt-10 pb-10 text-center font-roboto text-xs md:hidden">
-          © 2025 Vinícius jesus. Alguns direitos reservados.
-        </p>
+        <p class="mt-10 pb-10 text-center font-roboto text-xs md:hidden">© 2025 Vinícius jesus. Alguns direitos reservados.</p>
       </footer>
     </div>
     <script src="/src/js/index.js"></script>
+    <script type="module" src="/src/js/script.js"></script>
   </body>
 </html>
