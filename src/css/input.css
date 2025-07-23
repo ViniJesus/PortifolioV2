@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
   --color-cinza-100: #161616;
@@ -15,8 +15,8 @@
   --color-branco: #f2f2f2;
   --color-cinza-claro-100: #d9d9d9;
 
-  --font-poppins: "Poppins", "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
-  --font-roboto: "Roboto", "Helvetica Neue", "Segoe UI", "Arial", sans-serif;
+  --font-poppins: 'Poppins', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+  --font-roboto: 'Roboto', 'Helvetica Neue', 'Segoe UI', 'Arial', sans-serif;
 
   --animate-slide-in: slideIn 0.4s ease-in-out forwards;
   --animate-blink: blink 1s step-start infinite;
@@ -99,7 +99,7 @@
   }
 
   .button:before {
-    content: "";
+    content: '';
     position: absolute;
     left: 50%;
     transform: translateX(-50%) scaleY(1) scaleX(1.25);
@@ -112,7 +112,7 @@
   }
 
   .button:after {
-    content: "";
+    content: '';
     position: absolute;
     left: 55%;
     transform: translateX(-50%) scaleY(1) scaleX(1.45);
@@ -138,4 +138,19 @@
     top: -45%;
     background-color: #8d1614;
   }
+}
+
+.slide:hover {
+  will-change: transform;
+}
+
+.slide li {
+  opacity: 0.8;
+  transform: scale(0.8);
+  transition: 0.4s;
+}
+
+.slide li.active {
+  opacity: 1;
+  transform: scale(1);
 }
