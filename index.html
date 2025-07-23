@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Revalia&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/src/css/output.css" />
@@ -151,6 +151,12 @@
           <h1 class="font-poppins text-xl font-bold uppercase md:text-2xl">Certificados</h1>
           <span class="h-1 w-14 rounded-md bg-vermelho-100"></span>
         </div>
+        <ul class="custom-controls mt-10 flex justify-center gap-5 *:bg-vermelho-200 *:text-center *:text-2xl *:font-bold">
+          <li class="rounded-md px-4 py-2 font-revalia">1</li>
+          <li class="rounded-md px-4 py-2 font-revalia">2</li>
+          <li class="rounded-md px-4 py-2 font-revalia">3</li>
+          <li class="rounded-md px-4 py-2 font-revalia">4</li>
+        </ul>
         <div class="slide-wrapper mt-10 overflow-hidden">
           <ul class="slide m-0 flex gap-5 p-0 *:w-4/5 *:max-w-[800px] *:shrink-0 *:overflow-hidden *:rounded-lg *:shadow-md">
             <li>
@@ -162,11 +168,14 @@
             <li>
               <img class="block max-w-full" src="src/img/projects/lifesurf.png" alt="" />
             </li>
+            <li>
+              <img class="block max-w-full" src="src/img/projects/lifesurf.png" alt="" />
+            </li>
           </ul>
         </div>
-        <div class="arrow-nav">
-          <button class="prev">Prev</button>
-          <button class="next">Next</button>
+        <div class="arrow-nav my-5 flex justify-around rounded-sm *:h-16 *:w-16 *:cursor-pointer">
+          <button class="prev bg-[url(/src/img/certificates/SETA2.svg)] bg-center bg-no-repeat"></button>
+          <button class="next bg-[url(/src/img/certificates/SETA1.svg)] bg-center bg-no-repeat"></button>
         </div>
       </section>
     </div>
