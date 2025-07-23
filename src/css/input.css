@@ -1,10 +1,20 @@
 @import 'tailwindcss';
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
+  /* DARK MODEK */
   --color-cinza-100: #161616;
   --color-cinza-200: #191919;
   --color-cinza-300: #252525;
   --color-cinza-400: #454545;
+
+  /* LIGHT MODE */
+  --color-cinza-claro-100: #d9d9d9;
+  --color-cinza-claro-200: #f1f1f1;
+  --color-cinza-claro-300: #f6f6f6;
+  --color-cinza-claro-400: #eeeeee;
+  --color-cinza-claro-500: #e0e0e0;
 
   --color-vermelho-100: #a32522;
   --color-vermelho-200: #b93e3b;
@@ -13,11 +23,11 @@
   --color-vermelho-950: #320100;
 
   --color-branco: #f2f2f2;
-  --color-cinza-claro-100: #d9d9d9;
 
   --font-poppins: 'Poppins', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
   --font-roboto: 'Roboto', 'Helvetica Neue', 'Segoe UI', 'Arial', sans-serif;
   --font-revalia: 'Revalia', 'Poppins', 'Segeo UI', 'Arial', sans-serif;
+
   --animate-slide-in: slideIn 0.4s ease-in-out forwards;
   --animate-blink: blink 1s step-start infinite;
   --animate-jump: jump 5s ease-in-out infinite;
@@ -87,15 +97,15 @@
 
 @layer components {
   .input {
-    @apply mt-1 rounded-md bg-cinza-400 px-2 py-2 font-roboto focus:shadow-neon focus:ring-2 focus:ring-vermelho-100 focus:outline-none;
+    @apply bg-cinza-claro-500 font-roboto focus:shadow-neon focus:ring-vermelho-100 dark:bg-cinza-400 mt-1 rounded-md px-2 py-2 focus:outline-none focus:ring-2;
   }
 
   .link {
-    @apply relative inline-block before:absolute before:bottom-0 before:left-0 before:h-[3px] before:w-0 before:rounded-md before:bg-vermelho-100 before:transition-all before:duration-300 before:content-[''] hover:before:w-full;
+    @apply before:bg-vermelho-100 relative inline-block before:absolute before:bottom-0 before:left-0 before:h-[3px] before:w-0 before:rounded-md before:transition-all before:duration-300 before:content-[''] hover:before:w-full;
   }
 
   .button {
-    @apply relative z-10 inline-block cursor-pointer overflow-hidden rounded-md bg-vermelho-100 px-4 py-2 text-sm font-bold text-branco uppercase transition-all duration-200 ease-in;
+    @apply bg-vermelho-100 text-branco relative z-10 inline-block cursor-pointer overflow-hidden rounded-md px-4 py-2 text-sm font-bold uppercase transition-all duration-200 ease-in;
   }
 
   .button:before {

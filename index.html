@@ -12,62 +12,69 @@
     />
     <link rel="stylesheet" href="/src/css/output.css" />
   </head>
-  <body class="bg-cinza-100">
+  <body class="bg-cinza-claro-200 transition-colors duration-300 dark:bg-cinza-100">
     <header class="container mt-10 flex justify-between">
       <a href="./">
         <img src="/src/img/header/LOGO.svg" alt="Logo do Portifolio" />
       </a>
-      <nav class="z-40 hidden items-center max-md:fixed max-md:inset-0 max-md:w-full md:block" id="mobile-menu">
-        <div class="fixed inset-0 bg-cinza-300/40 backdrop-blur-md md:hidden"></div>
-        <ul class="text-2xl text-branco max-md:absolute max-md:z-50 max-md:w-full max-md:divide-y-2 max-md:divide-white/10 max-md:p-8 md:flex md:flex-wrap md:gap-8 md:text-lg">
-          <li class="animate-slide-in opacity-0 animate-1">
-            <a href="#home" class="link block p-4 max-md:hover:bg-white/10 md:px-0 md:py-2">Home</a>
-          </li>
-          <li class="animate-slide-in opacity-0 animate-2">
-            <a href="#about-me" class="link block p-4 max-md:hover:bg-white/10 md:px-0 md:py-2">Sobre mim</a>
-          </li>
-          <li class="animate-slide-in opacity-0 animate-3">
-            <a href="#projects" class="link block p-4 max-md:hover:bg-white/10 md:px-0 md:py-2">Projetos</a>
-          </li>
-          <li class="animate-slide-in opacity-0 animate-4">
-            <a href="#certificates" class="link block p-4 max-md:hover:bg-white/10 md:px-0 md:py-2">Certificados</a>
-          </li>
-          <li class="animate-slide-in opacity-0 animate-5">
-            <a href="#contact" class="link block p-4 max-md:hover:bg-white/10 md:px-0 md:py-2">Contato</a>
-          </li>
-        </ul>
-      </nav>
-      <button class="md:hidden" id="mobile-button">
-        <span class="flex h-3 w-5 flex-col justify-between *:h-0.5 *:rounded-md *:bg-vermelho-100">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-      </button>
+      <div class="flex items-center gap-5">
+        <nav class="z-40 hidden items-center max-md:fixed max-md:inset-0 max-md:w-full md:block" id="mobile-menu">
+          <div class="fixed inset-0 bg-cinza-claro-400/40 backdrop-blur-md md:hidden dark:bg-cinza-300/40"></div>
+          <ul
+            class="text-2xl text-cinza-100 max-md:absolute max-md:z-50 max-md:w-full max-md:divide-y-2 max-md:divide-cinza-200/20 max-md:p-8 md:flex md:flex-wrap md:gap-8 md:text-lg dark:text-branco dark:max-md:divide-white/10"
+          >
+            <li class="animate-slide-in opacity-0 animate-1">
+              <a href="#home" class="link block p-4 max-md:hover:bg-white/10 md:px-0 md:py-2">Home</a>
+            </li>
+            <li class="animate-slide-in opacity-0 animate-2">
+              <a href="#about-me" class="link block p-4 max-md:hover:bg-white/10 md:px-0 md:py-2">Sobre mim</a>
+            </li>
+            <li class="animate-slide-in opacity-0 animate-3">
+              <a href="#projects" class="link block p-4 max-md:hover:bg-white/10 md:px-0 md:py-2">Projetos</a>
+            </li>
+            <li class="animate-slide-in opacity-0 animate-4">
+              <a href="#certificates" class="link block p-4 max-md:hover:bg-white/10 md:px-0 md:py-2">Certificados</a>
+            </li>
+            <li class="animate-slide-in opacity-0 animate-5">
+              <a href="#contact" class="link block p-4 max-md:hover:bg-white/10 md:px-0 md:py-2">Contato</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="md:hidden" id="mobile-button">
+          <span class="flex h-3 w-5 flex-col justify-between *:h-0.5 *:rounded-md *:bg-vermelho-100">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+        <button id="toggle-dark" class="active-dark rounded-md px-4 py-2 text-branco shadow-md">
+          <img src="/src/img/header/lua.svg" alt="Icone de uma lua" />
+        </button>
+      </div>
     </header>
 
     <!-- HOME  -->
-    <main id="home" class="container mt-16 text-branco md:flex md:items-center md:justify-between">
+    <main id="home" class="container mt-16 text-cinza-100 md:flex md:items-center md:justify-between dark:text-branco">
       <div>
         <h1 class="max-w-sm font-poppins text-xl font-bold md:max-w-full md:text-5xl">
           Olá, eu sou <span class="text-vermelho-100">Vinícius Jesus</span>
           <span class="hidden h-1 w-6 animate-blink bg-vermelho-100 1lg:inline-block"></span>
         </h1>
-        <p class="font-roboto">Desenvolvedor Web Front-End</p>
+        <p class="font-poppins">Desenvolvedor Web Front-End</p>
         <button id="download-cv" class="button mt-3.5">Baixar CV</button>
       </div>
-      <img src="/src/img/main/PIXEL 1.png" alt="Pixel Art de uma garoto programando" class="hidden md:block md:h-1/3 md:w-1/3" />
+      <img id="pixelart" src="/src/img/main/PIXEL 1.png" alt="Pixel Art de uma garoto programando" class="hidden transition-all duration-300 md:block md:h-1/3 md:w-1/3" />
     </main>
 
     <!-- SOBRE MIM  -->
-    <div class="bg-cinza-200">
-      <section id="about-me" class="container mt-10 bg-cinza-200 py-8 text-branco">
+    <div class="bg-cinza-claro-300 transition-colors duration-300 dark:bg-cinza-200">
+      <section id="about-me" class="container mt-10 py-8 text-cinza-100 transition-colors duration-300 dark:text-branco">
         <div class="sm:flex sm:gap-10">
           <div class="relative mx-auto h-72 w-72 flex-shrink-0 rounded-xl pt-8 lg:h-96 lg:w-96">
             <img src="/src/img/about/perfil.jpg" alt="Minha foto de perfil" class="block h-72 w-72 rounded-xl lg:h-96 lg:w-96" />
             <div class="absolute right-0 bottom-0 flex h-20 w-20 translate-x-1/3 translate-y-4/5 animate-jump flex-col items-center justify-center rounded-xl bg-vermelho-200 p-2 text-center">
-              <h2 class="font-bold">6+</h2>
-              <p class="text-xs">Meses de Experiência</p>
+              <h2 class="font-bold text-branco">6+</h2>
+              <p class="text-xs text-branco">Meses de Experiência</p>
             </div>
           </div>
 
@@ -81,8 +88,8 @@
               Sou um desenvolvedor dedicado, que está sempre em busca de novos desafios e oportunidades para crescer profissionalmente. Atualmente formado em Analise e Desenvolvimento de Sistemas e
               atualmente expandindo meus conhecimentos para Pós-Graduação em Desenvolvimento Full Stack.
             </p>
-            <div class="flex flex-col gap-10 1sm:flex-row">
-              <div class="rounded-lg border-l-4 border-vermelho-100 bg-cinza-300 p-5 sm:min-w-56">
+            <div class="flex flex-col gap-10 *:shadow-md 1sm:flex-row 1sm:flex-wrap *:1sm:max-w-[500px] *:1sm:min-w-md *:dark:shadow-lg">
+              <div class="rounded-lg border-l-4 border-vermelho-100 bg-cinza-claro-400 p-5 transition-colors duration-300 sm:min-w-56 dark:bg-cinza-300">
                 <div class="flex items-center gap-2">
                   <img class="rounded-full bg-vermelho-200 p-2" src="src/img/about/graduate.svg" alt="" />
                   <h1 class="font-bold">Formação</h1>
@@ -92,7 +99,7 @@
                 <p class="text-right font-bold">USCS</p>
               </div>
 
-              <div class="rounded-lg border-l-4 border-vermelho-100 bg-cinza-300 p-5 sm:min-w-56">
+              <div class="rounded-lg border-l-4 border-vermelho-100 bg-cinza-claro-400 p-5 transition-colors duration-300 sm:min-w-56 dark:bg-cinza-300">
                 <div class="flex items-center gap-2">
                   <img class="rounded-full bg-vermelho-200 p-2" src="src/img/about/book.svg" alt="" />
                   <h1 class="font-bold">Educação Atual</h1>
@@ -110,7 +117,7 @@
           <span class="h-1 w-14 rounded-md bg-vermelho-100"></span>
         </div>
         <ul
-          class="mt-5 flex flex-wrap gap-2.5 pb-10 *:rounded-md *:bg-vermelho-200 *:px-4 *:py-2 *:font-roboto *:text-sm *:font-medium *:duration-300 *:ease-in-out *:hover:-translate-y-1 *:hover:transition-all"
+          class="mt-5 flex flex-wrap gap-2.5 pb-10 *:rounded-md *:bg-vermelho-200 *:px-4 *:py-2 *:font-roboto *:text-sm *:font-medium *:text-branco *:duration-300 *:ease-in-out *:hover:-translate-y-1 *:hover:transition-all"
         >
           <li>HTML</li>
           <li>CSS</li>
@@ -132,7 +139,7 @@
     </div>
 
     <!-- PROJETOS -->
-    <section class="container text-branco" id="projects">
+    <section class="container text-cinza-100 transition-colors duration-300 dark:text-branco" id="projects">
       <div class="flex flex-col items-center pt-8">
         <h1 class="font-poppins text-xl font-bold uppercase md:text-2xl">Projetos</h1>
         <span class="h-1 w-14 rounded-md bg-vermelho-100"></span>
@@ -145,13 +152,13 @@
     </section>
 
     <!-- CERTIFICADOS  -->
-    <div class="bg-cinza-200">
-      <section class="container mt-8 pb-8 text-branco" id="certificates">
+    <div class="bg-cinza-claro-300 transition-colors duration-300 dark:bg-cinza-200">
+      <section class="container mt-8 pb-8 text-cinza-100 transition-colors duration-300 dark:text-branco" id="certificates">
         <div class="flex flex-col items-center pt-8">
           <h1 class="font-poppins text-xl font-bold uppercase md:text-2xl">Certificados</h1>
           <span class="h-1 w-14 rounded-md bg-vermelho-100"></span>
         </div>
-        <ul class="custom-controls mt-10 flex justify-center gap-5 *:bg-vermelho-200 *:text-center *:text-2xl *:font-bold">
+        <ul class="custom-controls mt-10 flex justify-center gap-5 text-branco *:bg-vermelho-200 *:text-center *:text-2xl *:font-bold">
           <li class="min-w-10 rounded-sm px-2 py-2 font-revalia">1.</li>
           <li class="min-w-10 rounded-sm px-2 py-2 font-revalia">2.</li>
           <li class="min-w-10 rounded-sm px-2 py-2 font-revalia">3.</li>
@@ -160,17 +167,17 @@
         <div class="slide-wrapper mt-10 overflow-hidden">
           <ul class="slide flex gap-5 p-0 *:w-4/5 *:max-w-[600px] *:shrink-0 md:justify-center *:md:w-1/2">
             <li>
-              <a target="_blank" href="https://www.origamid.com/certificate/116163c0"><img class="block max-w-full rounded-lg" src="src/img/certificates/ui.png" alt="" /></a>
+              <a target="_blank" href="https://www.origamid.com/certificate/116163c0"><img class="block max-w-full rounded-lg shadow-md" src="src/img/certificates/ui.png" alt="" /></a>
             </li>
             <li>
-              <a target="_blank" href="https://www.origamid.com/certificate/5a58d694"><img class="block max-w-full rounded-lg" src="src/img/certificates/tailwind.png" alt="" /></a>
+              <a target="_blank" href="https://www.origamid.com/certificate/5a58d694"><img class="block max-w-full rounded-lg shadow-md" src="src/img/certificates/tailwind.png" alt="" /></a>
             </li>
             <li>
-              <a target="_blank" href="https://www.origamid.com/certificate/6f47b019"><img class="block max-w-full rounded-lg" src="src/img/certificates/css-grid.png" alt="" /></a>
+              <a target="_blank" href="https://www.origamid.com/certificate/6f47b019"><img class="block max-w-full rounded-lg shadow-md" src="src/img/certificates/css-grid.png" alt="" /></a>
             </li>
             <li>
               <a target="_blank" href="https://www.credly.com/badges/bc4dbf8b-4b2c-403c-9f68-be2dac451dde"
-                ><img class="block max-w-full rounded-lg" src="src/img/certificates/cybersecurity.png" alt=""
+                ><img class="block max-w-full rounded-lg shadow-md" src="src/img/certificates/cybersecurity.png" alt=""
               /></a>
             </li>
           </ul>
@@ -179,13 +186,13 @@
     </div>
 
     <!-- CONTATO -->
-    <section class="container mt-8 pb-8 text-branco" id="contact">
+    <section class="container mt-8 pb-8 text-cinza-100 transition-colors duration-300 dark:text-branco" id="contact">
       <div class="flex flex-col items-center pt-8">
         <h1 class="font-poppins text-xl font-bold uppercase md:text-2xl">Contato</h1>
         <span class="h-1 w-14 rounded-md bg-vermelho-100"></span>
       </div>
       <div class="md:flex md:items-start md:gap-5">
-        <div class="mx-4 mt-8 flex flex-col gap-5 border-y-4 border-vermelho-100 bg-cinza-300 px-5 py-5 md:min-w-sm">
+        <div class="mx-4 mt-8 flex flex-col gap-5 border-y-4 border-vermelho-100 bg-cinza-claro-400 px-5 py-5 transition-colors duration-300 md:min-w-sm dark:bg-cinza-300">
           <div class="flex items-center gap-2">
             <img src="src/img/contact/phone-celular2.svg" alt="Icone de um telefone" />
             <div>
@@ -205,7 +212,7 @@
             <a href="https://github.com/ViniJesus"><img src="src/img/contact/github.svg" alt="" /></a>
           </div>
         </div>
-        <form id="contato-form" class="mx-4 mt-8 flex flex-col gap-5 border-y-4 border-vermelho-100 bg-cinza-300 px-5 py-5 md:w-full">
+        <form id="contato-form" class="mx-4 mt-8 flex flex-col gap-5 border-y-4 border-vermelho-100 bg-cinza-claro-400 px-5 py-5 transition-colors duration-300 md:w-full dark:bg-cinza-300">
           <div class="gap-5 max-md:space-y-5 md:flex md:items-center">
             <div class="flex w-full flex-col">
               <label for="name">Seu Nome</label>
@@ -228,8 +235,8 @@
     </section>
 
     <!-- RODAPE -->
-    <div class="bg-cinza-200">
-      <footer class="container mt-8 bg-cinza-200 pb-8 text-branco md:flex md:justify-between">
+    <div class="bg-cinza-claro-300 transition-colors duration-300 dark:bg-cinza-200">
+      <footer class="container mt-8 pb-8 text-cinza-100 transition-colors duration-300 md:flex md:justify-between dark:text-branco">
         <div class="mx-4 flex flex-col pt-8">
           <h1 class="font-poppins text-xl font-bold uppercase">OBRIGADO PELA VISITA</h1>
           <span class="h-1 w-1/2 rounded-md bg-vermelho-100"></span>
@@ -276,5 +283,6 @@
     </div>
     <script src="/src/js/index.js"></script>
     <script type="module" src="/src/js/script.js"></script>
+    <script src="/src/js/darkmode.js"></script>
   </body>
 </html>
